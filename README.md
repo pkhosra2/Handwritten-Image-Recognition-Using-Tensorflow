@@ -164,7 +164,7 @@ To test our code written we import the Python code into the Google Collaborate e
 
 The training and test sample sizes can be seen below:
 
-![pastedImage0 (5)](https://user-images.githubusercontent.com/39222728/57188541-92fec800-6ece-11e9-8d5a-e01c7f004028.png)
+![unnamed (4)](https://user-images.githubusercontent.com/39222728/57188579-0ef91000-6ecf-11e9-9a51-b865e82439f8.jpg)
 
 From this splot, we are able to achieve the following accuracy, as shown below:
 
