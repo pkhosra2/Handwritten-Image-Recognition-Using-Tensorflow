@@ -157,3 +157,23 @@ This GPU architecture is shown by the diagram below:
 
 
 ## Results 
+
+### Test Sizes & Accuracy
+
+To test our code written we import the Python code into the Google Collaborate environment system
+
+The training and test sample sizes can be seen below:
+
+![pastedImage0 (5)](https://user-images.githubusercontent.com/39222728/57188541-92fec800-6ece-11e9-8d5a-e01c7f004028.png)
+
+From this splot, we are able to achieve the following accuracy, as shown below:
+
+![unnamed (2)](https://user-images.githubusercontent.com/39222728/57188546-b4f84a80-6ece-11e9-88ed-837c9f94cf36.jpg)
+
+After several iterations through epochs, we were able to accurately predict the following set of numbers form the MNIST data set: 
+
+![unnamed (3)](https://user-images.githubusercontent.com/39222728/57188565-deb17180-6ece-11e9-978b-2591ebcb49a9.jpg)
+
+### Impoving Speed With Parallelization
+
+
