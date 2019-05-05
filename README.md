@@ -68,7 +68,12 @@ In the case of digit recognition, we would use 10 softmax functions to find whic
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188455-f982e680-6ecc-11e9-9089-930027807420.JPG)
 
-The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application.  
+The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application. 
+
+Below is a snippet of creating the epochs and running through the iterations
+
+![Capture](https://user-images.githubusercontent.com/39222728/57188464-2afbb200-6ecd-11e9-9726-b0d7419b54ef.JPG)
+
 ## Solving The Problem with Tensorflow 
 
 Tensorflow is an open source-library for data flow programming, developed by Google. A ‘tensor’ is a data structure similar to that of an array or list. In other words, we can say that it’s the flow of multidimensional matrices. These array will be initialized and manipulated as they are passed along to the Tensorflow graph, the main form of expressing computation. 
