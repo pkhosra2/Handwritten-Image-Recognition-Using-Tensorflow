@@ -24,7 +24,11 @@ Neurons within the neural ntowkr are connected in layers. these layers can be ca
 
 Neural network learned through training. During this training a set of pre-labeled data needs to be passed to the network, with its prediction being compared to the actual answer. Eevery time the network is wrong, the network can readjust its weightings for neurons try again until it has converged to its highest accuracy percentage. This training process is the main process in which we will also focus on improving computational time. 
 
-## Convolutional Neural Networks (CNN's)
+The training set we will use for our neural network will be the MNIST training set, consisting of handwritten digits. We will be using roughly 60,000 training images and 10,000 testing images. 
+
+### Convolutional Neural Networks
+
+
 
 ## Solving The Problem with Tensorflow 
 
