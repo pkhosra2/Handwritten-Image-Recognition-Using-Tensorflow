@@ -110,7 +110,11 @@ The output is another 4-dimensional tensor with the dimensions:
 - Y-axis of the image 
 - Channels produced by each of the convolutional filters 
 
-### 
+## Training & Testing Our Data
+
+below we see a snippet of codoe used to create placeholder funciton as our tensor as well as first and second convoltional layers
+
+![Capture](https://user-images.githubusercontent.com/39222728/57188438-a6a92f00-6ecc-11e9-966a-db1b308d145b.JPG)
 
 
 ## Tensorflow's Parallelization Process
