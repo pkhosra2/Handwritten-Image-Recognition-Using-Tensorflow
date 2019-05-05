@@ -46,6 +46,15 @@ Therefore, in order to avoid this “Parameter explosion”, it is imperitive th
 
 A CNN uses a “Sliding Window Function” to reduce the number of parameters to train. This Sliding Window is called a “Kernel” which is usually a 3x3 matrix of weights to multiply to the input. 
 
+The following function will be used to implement this CNN in Python 3:
+
+- new_conv_layer (defines a new convolutional layer)
+- new_weights (implements weighting of convolutional layers) 
+- new_biases (factors in biases to certain image locations)
+- flatten_layer (converts multi-dimensional matrix into flat vector)
+- feed_forward ( converts flattened layer into the final output )
+- doInference (simulates an evenly spaced group of handwritten characters) 
+
 We can initialize our CNN using hte following lines of code:
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188400-f63b2b00-6ecb-11e9-855e-251af08deb97.JPG)
