@@ -14,6 +14,10 @@ In its simplest form, a neural network is modeled off the wway our brains work, 
 
 The inputs of a neural network are multiplied by weights, which are in turn added together and given a particular bias. This resulting sum is then passed through an activation function to produce a certain output. Activation function act as a gateway for neurons to send their output from one neuron to the next. The activation function we will be using specifically for this project is the Rectified Linear Unit Function or ReLU function for short. 
 
+Below we can see a simpel flow chart for the process of a simple neural network
+
+![pasted image 0](https://user-images.githubusercontent.com/39222728/57187996-64302400-6ec5-11e9-9add-7753fec4e86a.png)
+
 
 
 ## Convolutional Neural Networks (CNN's)
