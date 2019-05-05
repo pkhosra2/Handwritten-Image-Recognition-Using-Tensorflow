@@ -48,8 +48,33 @@ After going through the required amount of convolutional layers(design decision)
 In the case of digit recognition, we would use 10 softmax functions to find which digit the image probably is. The highest probability out of the 10 wins. 
 
 The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application.  
-
 ## Solving The Problem with Tensorflow 
+
+Tensorflow is an open source-library for data flow programming, developed by Google. A ‘tensor’ is a data structure similar to that of an array or list. In other words, we can say that it’s the flow of multidimensional matrices. These array will be initialized and manipulated as they are passed along to the Tensorflow graph, the main form of expressing computation. 
+
+The paramters of Tensorflow typically consists of the following parts: 
+
+- Placeholder variables used for inputting data into the graph
+- Variables that are going to be optimized so as to make the convolutional network perform better 
+- Mathematical formulas for convolutional network 
+- A cost measure that can be used to guide the optimization of the variables
+- An optimization method which iterates each variable
+
+### Complete Neural Network Flow & Structure 
+
+Below we can see the entire convolutional neural network structure for our approach
+
+![pastedImage0 (4)](https://user-images.githubusercontent.com/39222728/57188271-c7bc5080-6ec9-11e9-8f32-c264e5d3a8d0.png)
+
+ We can break down this structure with the following steps:
+ 
+1. Input image is into the algorithm from the MNIST data-set library
+2. Convolutional Layer 1: Image is segmented into X segments known as ‘filter weights’ ; the segments are compared using convolution computation with neighbouring pixels 
+3. Each computation formulates a ‘channel ‘ 
+4. Convolutional Layer 2: Each of X channels is fed through another layer of convolution of X filters 
+5. Result is converted (flattened) into a 1-D Vector 
+6. Flattened Vector is classified into its respective number (0-9) using the features available 
+
 
 ## Tensorflow's Parallelization Process
 
