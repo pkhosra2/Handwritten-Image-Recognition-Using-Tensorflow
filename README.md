@@ -41,6 +41,14 @@ Below we see a 3D representation of the sldiing window in action
 
 ![pastedImage0 (4)](https://user-images.githubusercontent.com/39222728/57188130-7f039800-6ec7-11e9-8420-4d92a362d556.png)
 
+The kernel is slid over the image data a number of times to create many feature maps as output channels. Different shaped kernels(filters) are also applied to learn more and more about the shape of the image. Note that this process is only the first convoltional layer. After the convolutional layer, the image goes through an activation function that we discussed previously. After the activation function, it goes through a max pooling operation which further reduces the parameters required for training. Its important to note that A max pooling operation also uses a kernel and get the highest value from a certain area of data. 
+
+After going through the required amount of convolutional layers(design decision), the output is flattened in order to make the “fully-connected layer”. This layer goes through another transformation called a softmax function which finally outputs probabilities of the image belonging to a classification (eg P(y=”cat”)=0.1)
+
+In the case of digit recognition, we would use 10 softmax functions to find which digit the image probably is. The highest probability out of the 10 wins. 
+
+The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application.  
+
 ## Solving The Problem with Tensorflow 
 
 ## Tensorflow's Parallelization Process
