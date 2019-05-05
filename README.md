@@ -75,6 +75,26 @@ Below we can see the entire convolutional neural network structure for our appro
 5. Result is converted (flattened) into a 1-D Vector 
 6. Flattened Vector is classified into its respective number (0-9) using the features available 
 
+### Tensor Parameters
+
+Each ‘Tensor’ will have the following dimensions that will make it a 4-dimensional matrix:
+
+- Image number 
+- X-axis of each image 
+- Y-axis of each image 
+- Channels of each image 
+
+Note: input channels may either be colour-channels or filter channels, but since we are feeding grayscale images, we will be using filter channels 
+
+The output is another 4-dimensional tensor with the dimensions: 
+
+- Image number, (same as input)
+- X-axis of the image
+- Y-axis of the image 
+- Channels produced by each of the convolutional filters 
+
+### 
+
 
 ## Tensorflow's Parallelization Process
 
