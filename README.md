@@ -135,8 +135,25 @@ below we see a snippet of codoe used to create placeholder funciton as our tenso
 ![Capture](https://user-images.githubusercontent.com/39222728/57188438-a6a92f00-6ecc-11e9-966a-db1b308d145b.JPG)
 
 
-## Tensorflow's Parallelization Process
+## Testing Environment & System 
 
-## Testing Environment
+Before we parallelize our process, we must take a look at the onboard GPU we are working with:
+
+GPU: Tesla K80 , compute 3.7, having 2496 CUDA cores and 13 SMX (Streaming Multiprocessor Architecture) at 560 MHz speed, 12GB GDDR5 VRAM with 240 GB/s memory bandwidth
+PCIe: Host to Device Bandwidth 12 GB/s
+CPU: single core hyper threaded Xeon Processors @2.3Ghz i.e(1 core, 2 threads) 
+
+With this GPU we can parallelize 13 x 2496 = 32448 simple operations
+
+## Tensorflow Parallelization
+
+In the python “tf.nn.Conv2d” function, there is a flag “use_cudnn_on_gpu = true” which automatically parallelized the convolution operation
+
+Tensorflow implements the GPU operations in C++ 
+
+This GPU architecture is shown by the diagram below:
+
+![pastedImage0 (5)](https://user-images.githubusercontent.com/39222728/57188524-3ef3e380-6ece-11e9-91cb-367581be7555.png)
+
 
 ## Results 
