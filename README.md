@@ -26,6 +26,10 @@ Neural network learned through training. During this training a set of pre-label
 
 The training set we will use for our neural network will be the MNIST training set, consisting of handwritten digits. We will be using roughly 60,000 training images and 10,000 testing images. 
 
+Please we the lines of sample code below for importing the MNIST data set
+
+![Capture](https://user-images.githubusercontent.com/39222728/57188355-406fdc80-6ecb-11e9-8ad8-2dcaacdc70b0.JPG)
+
 ### Convolutional Neural Networks
 
 Convolutional neural networks are useful for image classification because using a regular neural network would be too computationally intensive for this purpose/ For example, if there is a 100x100 image, there would be 10000 pixels which would be treated as neurons.
