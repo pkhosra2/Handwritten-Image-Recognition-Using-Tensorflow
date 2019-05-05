@@ -28,7 +28,18 @@ The training set we will use for our neural network will be the MNIST training s
 
 ### Convolutional Neural Networks
 
+Convolutional neural networks are useful for image classification because using a regular neural network would be too computationally intensive for this purpose/ For example, if there is a 100x100 image, there would be 10000 pixels which would be treated as neurons.
+In order to train the network, we would need connect each of these 10000 neurons to possibly 10000 more neurons in the next layer which would make 100 million required weights to train for just 1 layer
 
+![pastedImage0 (3)](https://user-images.githubusercontent.com/39222728/57188113-27fdc300-6ec7-11e9-998a-ed07896c3603.png)
+
+Therefore, in order to avoid this “Parameter explosion”, it is imperitive that we use a Convolutonal Neural Network. 
+
+A CNN uses a “Sliding Window Function” to reduce the number of parameters to train. This Sliding Window is called a “Kernel” which is usually a 3x3 matrix of weights to multiply to the input. 
+
+Below we see a 3D representation of the sldiing window in action
+
+![pastedImage0 (4)](https://user-images.githubusercontent.com/39222728/57188130-7f039800-6ec7-11e9-8420-4d92a362d556.png)
 
 ## Solving The Problem with Tensorflow 
 
