@@ -176,4 +176,19 @@ After several iterations through epochs, we were able to accurately predict the 
 
 ### Impoving Speed With Parallelization
 
+After implementing the GPU parallalization, the time taken by the GPU increased very slightly with the number of epochs used for training while the time for CPU execution increased a lot.
+
+The time increase was 57.64 s/epoch in CPU mode for 100 batch size, while the time increase was 3.1504 s/epoch in GPU mode for 100 batch size. This increase is outline by the line graph below:
+
+![pastedImage0 (6)](https://user-images.githubusercontent.com/39222728/57188603-48ca1680-6ecf-11e9-97a1-0b78cea14658.png)
+
+We can also compare a much higher batch size for training to the previous result. The time increase was 68.60 s/epoch in CPU mode for 1200 batch size, and the time increase was 4.454 s/epoch in GPU mode for 1200 batch size. This shows that batch size makes training slower per epoch used but affects the GPU less than CPU.
+
+
+![pastedImage0 (7)](https://user-images.githubusercontent.com/39222728/57188612-7e6eff80-6ecf-11e9-8f44-c6bbad295c67.png)
+
+Overall, we find that training with different batch sizes alone doesn’t affect the timing too much within the range 100-1200 images. However, if batch size is low enough, GPU performance gain is much lower. The best improvmemnt in speed was the  ~65-70 seconds with the GPU. 
+
+![pastedImage0 (9)](https://user-images.githubusercontent.com/39222728/57188624-bfffaa80-6ecf-11e9-8735-425dfffff176.png)
+![pastedImage0 (8)](https://user-images.githubusercontent.com/39222728/57188625-bfffaa80-6ecf-11e9-8177-8deef513b0c4.png)
 
