@@ -64,7 +64,7 @@ The paramters of Tensorflow typically consists of the following parts:
 
 Below we can see the entire convolutional neural network structure for our approach
 
-![pastedImage0 (4)](https://user-images.githubusercontent.com/39222728/57188271-c7bc5080-6ec9-11e9-8f32-c264e5d3a8d0.png)
+![unnamed (1)](https://user-images.githubusercontent.com/39222728/57188291-179b1780-6eca-11e9-8ce3-cbcfdad34d14.jpg)
 
  We can break down this structure with the following steps:
  
