@@ -58,11 +58,15 @@ The kernel is slid over the image data a number of times to create many feature 
 
 After going through the required amount of convolutional layers(design decision), the output is flattened in order to make the “fully-connected layer”. This layer goes through another transformation called a softmax function which finally outputs probabilities of the image belonging to a classification (eg P(y=”cat”)=0.1)
 
-See the lines of exmaple code below for intializing the fully-connected alyer for flattening nad implementing max-pooling
+See the lines of exmaple code below for intializing the fully-connected layer for flattening nad implementing max-pooling
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188411-326e8b80-6ecc-11e9-8e7a-f1ab3ac3b88e.JPG)
 
-In the case of digit recognition, we would use 10 softmax functions to find which digit the image probably is. The highest probability out of the 10 wins. 
+![Capture](https://user-images.githubusercontent.com/39222728/57188449-d2c4b000-6ecc-11e9-8696-a6bc829e46b1.JPG)
+
+In the case of digit recognition, we would use 10 softmax functions to find which digit the image probably is. The highest probability out of the 10 wins. The lines of code shown below shows us how to implement the soft-max function
+
+![Capture](https://user-images.githubusercontent.com/39222728/57188455-f982e680-6ecc-11e9-9089-930027807420.JPG)
 
 The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application.  
 ## Solving The Problem with Tensorflow 
