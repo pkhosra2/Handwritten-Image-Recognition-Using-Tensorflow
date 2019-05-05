@@ -4,7 +4,13 @@ The purpose of this project is created a neural network to recognize hand-writte
 
 ![68747470733a2f2f706970656c696e652e61692f6173736574732f696d672f74656e736f72666c6f772d6c6f676f2d323032783136382e706e67](https://user-images.githubusercontent.com/39222728/57118724-3fa44280-6d33-11e9-8996-a30836242ea4.png)
 
-## Nueral Networks 
+## Abstract
+
+Image recognition can be a difficult task, but we can work around this with the use of the concept of neural networks. Neural networks allow us to teach an algorithm or "machine" the difference between what is right and wrong, based on paramters we can establish. To scale this application, we can also implement the use of GPU parallel programming like CUDA into our algorithm to speed up applications that might take up alot more processes to complete. 
+
+## Neural Networks 
+
+In its simplest form, a neural network is modeled off the wway our brains work, using synapes to pass electrical signal, or highs and lows. The same can be done, only to train a model or algorithm what 'right" and "wrong"
 
 ## Convolutional Neural Networks (CNN's)
 
