@@ -10,7 +10,11 @@ Image recognition can be a difficult task, but we can work around this with the 
 
 ## Neural Networks 
 
-In its simplest form, a neural network is modeled off the wway our brains work, using synapes to pass electrical signal, or highs and lows. The same can be done, only to train a model or algorithm what 'right" and "wrong"
+In its simplest form, a neural network is modeled off the wway our brains work, using synapes to pass electrical signal, or highs and lows. The same can be done to train a model or algorithm what 'right" and "wrong". 
+
+The inputs of a neural network are multiplied by weights, which are in turn added together and given a particular bias. This resulting sum is then passed through an activation function to produce a certain output. Activation function act as a gateway for neurons to send their output from one neuron to the next. The activation function we will be using specifically for this project is the Rectified Linear Unit Function or ReLU function for short. 
+
+
 
 ## Convolutional Neural Networks (CNN's)
 
