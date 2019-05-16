@@ -11,7 +11,7 @@ Image recognition can be a difficult task, but we can work around this with the 
 
 ## Neural Networks 
 
-In its simplest form, a neural network is modeled off the wway our brains work, using synapes to pass electrical signal, or highs and lows. The same can be done to train a model or algorithm what 'right" and "wrong". 
+In its simplest form, a neural network is modeled off the way our brains work, using synapes to pass electrical signal, or highs and lows. The same can be done to train a model or algorithm what 'right" and "wrong". 
 
 The inputs of a neural network are multiplied by weights, which are in turn added together and given a particular bias. This resulting sum is then passed through an activation function to produce a certain output. Activation function act as a gateway for neurons to send their output from one neuron to the next. The activation function we will be using specifically for this project is the Rectified Linear Unit Function or ReLU function for short. 
 
@@ -19,7 +19,7 @@ Below we can see a simplest flow chart for the process of a simple neural networ
 
 ![pasted image 0](https://user-images.githubusercontent.com/39222728/57187996-64302400-6ec5-11e9-9add-7753fec4e86a.png)
 
-Neurons within the neural ntowkr are connected in layers. these layers can be catagorized into three sections: inputs neurons, hidden neurons, and outputs neurons. The image below shows us an axample structure of the neruons
+Neurons within the neural network are connected in layers. these layers can be catagorized into three sections: inputs neurons, hidden neurons, and outputs neurons. The image below shows us an axample structure of the neruons
 
 ![pasted image 0 (1)](https://user-images.githubusercontent.com/39222728/57188035-2253ad80-6ec6-11e9-8c04-de3b5a85635b.png)
 
@@ -31,7 +31,7 @@ Please we the lines of sample code below for importing the MNIST data set
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188355-406fdc80-6ecb-11e9-8ad8-2dcaacdc70b0.JPG)
 
-We can set our MNIST window diimesions as shown bewlow:
+We can set our MNIST window diimesions as shown below:
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188390-d3a91200-6ecb-11e9-8965-309c70712a83.JPG)
 
@@ -55,15 +55,15 @@ The following function will be used to implement this CNN in Python 3:
 - feed_forward ( converts flattened layer into the final output )
 - doInference (simulates an evenly spaced group of handwritten characters) 
 
-We can initialize our CNN using hte following lines of code:
+We can initialize our CNN using the following lines of code:
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188400-f63b2b00-6ecb-11e9-855e-251af08deb97.JPG)
 
-Below we see a 3D representation of the sldiing window in action
+Below we see a 3D representation of the sliding window in action
 
 ![pastedImage0 (4)](https://user-images.githubusercontent.com/39222728/57188130-7f039800-6ec7-11e9-8420-4d92a362d556.png)
 
-The kernel is slid over the image data a number of times to create many feature maps as output channels. Different shaped kernels(filters) are also applied to learn more and more about the shape of the image. Note that this process is only the first convoltional layer. After the convolutional layer, the image goes through an activation function that we discussed previously. After the activation function, it goes through a max pooling operation which further reduces the parameters required for training. Its important to note that A max pooling operation also uses a kernel and get the highest value from a certain area of data. 
+The kernel is slid over the image data a number of times to create many feature maps as output channels. Different shaped kernels(filters) are also applied to learn more and more about the shape of the image. Note that this process is only the first convolutional layer. After the convolutional layer, the image goes through an activation function that we discussed previously. After the activation function, it goes through a max pooling operation which further reduces the parameters required for training. Its important to note that A max pooling operation also uses a kernel and get the highest value from a certain area of data. 
 
 After going through the required amount of convolutional layers(design decision), the output is flattened in order to make the “fully-connected layer”. This layer goes through another transformation called a softmax function which finally outputs probabilities of the image belonging to a classification (eg P(y=”cat”)=0.1)
 
@@ -77,7 +77,7 @@ In the case of digit recognition, we would use 10 softmax functions to find whic
 
 ![Capture](https://user-images.githubusercontent.com/39222728/57188455-f982e680-6ecc-11e9-9089-930027807420.JPG)
 
-The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days dependingo on the complexity of the application. 
+The final step is training the program to recognize the images correctly. We need to reduce error by iterating through large dataset of training, pre-labeled  images and using a function to correct error. To accomplish this we will use a built-in method called the “Adam Optimizer” which will correct the weights after iterating through labelled images. We can run the the whole process for a number of times called “epochs”. These epochs or iteration can take upwards to hours or even days depending on the complexity of the application. 
 
 Below is a snippet of creating the epochs and running through the iterations
 
@@ -87,7 +87,7 @@ Below is a snippet of creating the epochs and running through the iterations
 
 Tensorflow is an open source-library for data flow programming, developed by Google. A ‘tensor’ is a data structure similar to that of an array or list. In other words, we can say that it’s the flow of multidimensional matrices. These array will be initialized and manipulated as they are passed along to the Tensorflow graph, the main form of expressing computation. 
 
-The paramters of Tensorflow typically consists of the following parts: 
+The parameters of Tensorflow typically consists of the following parts: 
 
 - Placeholder variables used for inputting data into the graph
 - Variables that are going to be optimized so as to make the convolutional network perform better 
